@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #404146;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  color: white;
+  background-color: #404146;
+  z-index: 1;
+}
+
+.header-logo {
+  font-size: 36px;
+  letter-spacing: 2px;
+  padding: 0 40px;
+  text-transform: uppercase;
+}
+
+.header-list ul {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 35px;
+}
+
+.base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 80px;
+  margin-top: 70px;
+}
+
+.base-title {
+  font-size: 75px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.base span {
+  color: #f1d00e;
+}
+
+.base-text {
+  font-size: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.ninja-logo {
+  width: 250px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+  height: 300px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.about p {
+  padding-top: 20px;
+  line-height: 25px;
+}
+
+.project {
+  padding: 80px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-img {
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.project-content {
+  margin: 30px 40px 0;
+  text-align: center;
+}
+
+.contact {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-email,
+.text-message {
+  width: 50%;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.input-email:focus {
+  outline-color: #777bb4;
+}
+
+.text-message:focus {
+  outline-color: #777bb4;
+}
+
+.text-message {
+  height: 150px;
+}
+
+.input-btn {
+  width: 20%;
+  height: 45px;
+  border: none;
+  border-radius: 7px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #f7e571;
+  box-shadow: 0 7px #f4da31;
+}
+
+.input-btn:hover {
+  background-color: #f5e262;
+}
+
+.input-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  color: white;
+  background-color: #7c7d82;
+}
+
+.footer-logo {
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  margin-top: 30px;
+}
+
+.footer-list li {
+  margin-top: 10px;
+}
+
+@media (max-width: 425px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+
+  .header-list ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    padding-right: 20px;
+  }
+
+  .base-title,
+  .base-text {
+    text-align: center;
+  }
+
+  .about {
+    padding: 0 20px;
+    height: 400px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .input-email,
+  .text-message {
+    width: 80%;
+  }
+
+  .input-btn {
+    width: 50%;
+  }
+
+  footer {
+    padding-left: 20px;
+    flex-direction: column;
+  }
+
+  .footer-list {
+    margin-top: 10px;
+  }
+}
